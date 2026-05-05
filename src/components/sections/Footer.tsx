@@ -46,29 +46,29 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4 text-gray-300">
               <li>
-                <a href="/" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                <Link to="/" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
                   <span className="text-brand-orange text-xs">▹</span> Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> About Us
-                </a>
+                <Link to="/interventions" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> What we do
+                </Link>
               </li>
               <li>
-                <a href="/what-we-do" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> Our Work
-                </a>
+                <Link to="/approach" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> Approach
+                </Link>
               </li>
               <li>
-                <a href="/impact" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> Impact
-                </a>
+                <Link to="/jobs" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> Opportunities
+                </Link>
               </li>
               <li>
-                <a href="/contact-us" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> Contact
-                </a>
+                <Link to="/contact-us" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> Contact Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ export default function Footer() {
             
             <div className="space-y-6 text-gray-300">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-brand-orange" />
                 </div>
                 <p className="leading-relaxed mt-1">
@@ -92,27 +92,26 @@ export default function Footer() {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
                   <PhoneCall className="w-5 h-5 text-brand-orange" />
                 </div>
-                <a href="tel:+912912785116" className="hover:text-brand-orange transition-colors">
-                  +91-291-2785-116
+                <a href="tel:+919414059185" className="hover:text-brand-orange transition-colors">
+                  +91 94140 59185
                 </a>
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
                   <Mail className="w-5 h-5 text-brand-orange" />
                 </div>
-                <a href="mailto:email@gravis.org.in" className="hover:text-brand-orange transition-colors">
-                  email@gravis.org.in
+                <a href="mailto:idi@idinitiatives.com" className="hover:text-brand-orange transition-colors">
+              idi@idinitiatives.com
                 </a>
               </div>
             </div>
           </div>
-
         </div>
-        
+      
         {/* Divider & Copyright */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
           <p>© {new Date().getFullYear()} Inclusive Development Initiative. All Rights Reserved.</p>

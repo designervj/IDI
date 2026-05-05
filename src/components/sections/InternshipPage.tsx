@@ -55,22 +55,22 @@ export default function InternshipPage() {
             <form className="space-y-4">
               <div>
                 <label className="block text-gray-700 font-medium mb-1">Full Name</label>
-                <input type="text" className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand-blue focus:outline-none" placeholder="John Doe" />
+                <input type="text" className="w-full border border-gray-300 rounded-[10px] px-4 py-2 focus:ring-2 focus:ring-brand-blue focus:outline-none" placeholder="John Doe" />
               </div>
               <div>
                 <label className="block text-gray-700 font-medium mb-1">Email Address</label>
-                <input type="email" className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand-blue focus:outline-none" placeholder="john@example.com" />
+                <input type="email" className="w-full border border-gray-300 rounded-[10px] px-4 py-2 focus:ring-2 focus:ring-brand-blue focus:outline-none" placeholder="john@example.com" />
               </div>
               <div>
                 <label className="block text-gray-700 font-medium mb-1">Area of Interest</label>
-                <select className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-brand-blue focus:outline-none bg-white">
+                <select className="w-full border border-gray-300 rounded-[10px] px-4 py-2 focus:ring-2 focus:ring-brand-blue focus:outline-none bg-white">
                   <option>Research & Documentation</option>
                   <option>Field Implementation</option>
                   <option>Communications & Media</option>
                   <option>Other</option>
                 </select>
               </div>
-              <button type="button" className="w-full bg-brand-orange hover:bg-[#c26200] text-white font-bold py-3 rounded-lg transition-colors duration-300 mt-4">
+              <button type="button" className="w-full bg-brand-orange hover:bg-[#c26200] text-white font-bold py-3 rounded-[10px] transition-colors duration-300 mt-4">
                 Submit Application
               </button>
             </form>
