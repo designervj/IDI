@@ -1,98 +1,167 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Users, Droplets, BookOpen, Sun } from "lucide-react";
+import { Quote, MapPin, Heart, Leaf, Users, Droplets } from "lucide-react";
+
+const stories = [
+  {
+    quote: "The rainwater harvesting structure built in our village changed everything. For the first time in decades, our crops survived the dry season.",
+    name: "Ramkali Devi",
+    role: "SHG Member, Jodhpur",
+    icon: <Droplets className="w-5 h-5" />,
+    delay: 0.1,
+  },
+  {
+    quote: "Through IDI's training programs, I learned sustainable farming techniques. My family's income doubled within one season.",
+    name: "Gopal Singh",
+    role: "Farmer, Barmer District",
+    icon: <Leaf className="w-5 h-5" />,
+    delay: 0.2,
+  },
+  {
+    quote: "As a young woman in the Thar Desert, I never imagined running my own food processing unit. IDI made it possible.",
+    name: "Sunita Meena",
+    role: "Entrepreneur, Jaisalmer",
+    icon: <Heart className="w-5 h-5" />,
+    delay: 0.3,
+  },
+];
+
+const pillars = [
+  {
+    icon: <Droplets className="w-7 h-7 text-brand-blue" />,
+    title: "Water Resilience",
+    desc: "Reviving ancient rainwater harvesting systems like khadins to secure water for farming and daily life.",
+    bg: "bg-blue-50",
+    delay: 0.1,
+  },
+  {
+    icon: <Leaf className="w-7 h-7 text-green-700" />,
+    title: "Sustainable Livelihoods",
+    desc: "Integrating horticulture, animal husbandry, and dryland farming for diversified, resilient income.",
+    bg: "bg-green-50",
+    delay: 0.2,
+  },
+  {
+    icon: <Users className="w-7 h-7 text-brand-orange" />,
+    title: "Community Power",
+    desc: "Building Self-Help Groups and Intergenerational Learning Groups led by women and youth.",
+    bg: "bg-orange-50",
+    delay: 0.3,
+  },
+  {
+    icon: <MapPin className="w-7 h-7 text-purple-600" />,
+    title: "Desert-Born Solutions",
+    desc: "Every strategy is rooted in the unique ecology and culture of the Thar Desert region.",
+    bg: "bg-purple-50",
+    delay: 0.4,
+  },
+];
 
 export default function ImpactStats() {
-  const stats = [
-    {
-      id: 1,
-      icon: <Users className="w-10 h-10 text-white" />,
-      value: "50,000+",
-      label: "Farmers Supported",
-    },
-    {
-      id: 2,
-      icon: <Droplets className="w-10 h-10 text-white" />,
-      value: "1,200+",
-      label: "Water Structures Built",
-    },
-    {
-      id: 3,
-      icon: <BookOpen className="w-10 h-10 text-white" />,
-      value: "150+",
-      label: "Training Programs",
-    },
-    {
-      id: 4,
-      icon: <Sun className="w-10 h-10 text-white" />,
-      value: "200+",
-      label: "Villages Reached",
-    },
-  ];
-
-
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+    <section className="bg-[#f9f9f7] py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
-        <div className="text-center mb-20">
-          <motion.h2 
+        {/* ── Section Header ── */}
+        <div className="text-center mb-16">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-brand-orange font-semibold uppercase tracking-[0.25em] text-xs mb-3"
+          >
+            Our Work on the Ground
+          </motion.p>
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-black text-brand-blue mb-6"
+            className="text-4xl md:text-5xl font-bold text-brand-blue mb-4 leading-tight"
           >
-            Our Impact in <span className="text-brand-orange">Numbers</span>
+            Building Futures in the <span className="text-brand-orange">Thar Desert</span>
           </motion.h2>
-          <motion.div 
-            initial={{ width: 0 }}
-            whileInView={{ width: 120 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="w-32 h-1.5 bg-brand-orange mx-auto mb-8 rounded-full"
-          ></motion.div>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-gray-500 text-xl max-w-3xl mx-auto leading-relaxed"
+            className="text-gray-500 text-lg max-w-2xl mx-auto font-medium leading-relaxed"
           >
-            Working hand-in-hand with communities to create measurable, sustainable change across the Thar Desert and beyond.
+            IDI works with the most vulnerable communities in Rajasthan — bringing together ancient wisdom, modern techniques, and local ownership to create lasting change.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
-          {stats.map((stat, index) => (
-            <motion.div 
-              key={stat.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ 
-                duration: 0.5, 
-                delay: index * 0.1,
-                type: "spring",
-                stiffness: 100 
-              }}
+        {/* ── Four Pillars ── */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          {pillars.map((p, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: p.delay }}
               viewport={{ once: true }}
-              className="flex flex-col items-center p-10 rounded-[2.5rem] bg-gray-50/50 hover:bg-white hover:shadow-2xl hover:shadow-gray-200 transition-all duration-500 group"
+              className="bg-white rounded-2xl border border-gray-100 shadow-md p-7 hover:shadow-lg transition-shadow"
             >
-              <div className="w-24 h-24 bg-brand-orange rounded-3xl flex items-center justify-center mb-8 shadow-xl shadow-brand-orange/20 group-hover:rotate-6 transition-transform duration-300">
-                {stat.icon}
+              <div className={`w-14 h-14 ${p.bg} rounded-xl flex items-center justify-center mb-5`}>
+                {p.icon}
               </div>
-              <h3 className="text-5xl md:text-6xl font-semibold mb-4 text-brand-blue tracking-tighter">
-                {stat.value}
-              </h3>
-              <p className="text-gray-500 font-semibold tracking-widest uppercase text-sm md:text-base text-center">
-                {stat.label}
-              </p>
+              <h3 className="text-lg font-semibold text-brand-blue mb-2">{p.title}</h3>
+              <p className="text-gray-500 text-sm font-medium leading-relaxed">{p.desc}</p>
             </motion.div>
           ))}
         </div>
+
+        {/* ── Community Voices ── */}
+        <div className="mb-6 text-center">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-brand-orange font-semibold uppercase tracking-[0.25em] text-xs mb-2"
+          >
+            Community Voices
+          </motion.p>
+          <motion.h3
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold text-brand-blue"
+          >
+            Stories from the Field
+          </motion.h3>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {stories.map((s, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: s.delay }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl border border-gray-100 shadow-md p-8 flex flex-col justify-between hover:shadow-lg transition-shadow"
+            >
+              <div>
+                <Quote className="w-8 h-8 text-brand-orange/30 mb-4" />
+                <p className="text-gray-600 font-medium leading-relaxed text-base italic mb-6">
+                  "{s.quote}"
+                </p>
+              </div>
+              <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
+                <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white shrink-0">
+                  {s.icon}
+                </div>
+                <div>
+                  <p className="text-brand-blue font-semibold text-sm">{s.name}</p>
+                  <p className="text-gray-400 text-xs font-medium">{s.role}</p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
       </div>
     </section>
   );

@@ -65,7 +65,7 @@ export default function HeroSlider() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-white text-5xl md:text-5xl lg:text-6xl font-black leading-[0.9] mb-8 drop-shadow-2xl"
+            className="text-white text-5xl md:text-6xl lg:text-6xl font-bold font-black leading-[0.9] mb-8 drop-shadow-2xl"
           >
             Empowering <span className="text-brand-orange">Communities</span><br />
             For a <span className="italic font-serif">Better</span> Future.

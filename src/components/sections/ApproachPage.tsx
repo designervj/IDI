@@ -12,7 +12,7 @@ const ApproachPage = () => {
     <div className="bg-gray-50 text-gray-800">
       {/* ---------- Hero Section ---------- */}
 
-      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#123751]">
+      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#1e6c93]">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 40 }}

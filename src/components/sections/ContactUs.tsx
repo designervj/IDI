@@ -54,7 +54,7 @@ export default function ContactUs() {
       </section>
 
       {/* ── Info Cards ── */}
-      <section className="max-w-5xl mx-auto px-6 -mt-10 relative z-20">
+      <section className="max-w-7xl mx-auto px-6 -mt-10 relative z-20">
         <div className="grid sm:grid-cols-3 gap-5">
           {[
             {
@@ -96,7 +96,7 @@ export default function ContactUs() {
       </section>
 
       {/* ── Form + Sidebar ── */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-3 gap-8">
 
           {/* Form */}

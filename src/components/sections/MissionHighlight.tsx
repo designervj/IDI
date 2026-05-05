@@ -36,7 +36,7 @@ export default function MissionHighlight() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-extrabold text-brand-blue mb-4"
+            className="text-3xl md:text-5xl font-bold text-brand-blue mb-4"
           >
             What Drives Us
           </motion.h2>
