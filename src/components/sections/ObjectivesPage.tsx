@@ -13,7 +13,7 @@ const ObjectivesPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
               Objectives
             </h1>
           </motion.div>
@@ -39,7 +39,7 @@ const ObjectivesPage = () => {
         </motion.p>
 
 
-          <div className="my-10">
+        <div className="my-10">
           <img
             src="./assets/Image/object-imges1.jpg"
             alt="Project OverView Image"
@@ -96,14 +96,14 @@ const ObjectivesPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-12 text-lg leading-relaxed text-gray-700">
-          Through these interconnected objectives, the <strong>Inclusive Development Initiative </strong> 
+          Through these interconnected objectives, the <strong>Inclusive Development Initiative </strong>
 
-           project strives to create a replicable model for sustainable economic
+          project strives to create a replicable model for sustainable economic
           empowerment, building adaptive and just communities in the Thar Desert
           and beyond.
         </motion.p>
 
-      
+
       </section>
     </div>
   );

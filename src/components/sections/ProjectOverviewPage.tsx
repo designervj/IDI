@@ -14,7 +14,7 @@ const ProjectOverviewPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
               Project Overview
             </h1>
           </motion.div>
@@ -61,15 +61,15 @@ const ProjectOverviewPage = () => {
         </motion.p>
 
 
-         <motion.img
-              src="./assets/Image/project-overview.jpg"
-              alt="Community Empowerment"
-              className="rounded-2xl shadow-lg w-full object-cover md:h-[680px]"
-            />
+        <motion.img
+          src="./assets/Image/project-overview.jpg"
+          alt="Community Empowerment"
+          className="rounded-2xl shadow-lg w-full object-cover md:h-[680px]"
+        />
 
-  
-  <div className="space-y-2 mt-10">
-        {/* <motion.div
+
+        <div className="space-y-2 mt-10">
+          {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -86,9 +86,9 @@ const ProjectOverviewPage = () => {
             developed to enhance food and fodder security for approximately
             20,000 people and 80,000 cattle.
           </p>
-        {/* </motion.div> */}
+          {/* </motion.div> */}
 
-        {/* <motion.div
+          {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -103,9 +103,9 @@ const ProjectOverviewPage = () => {
             These efforts aim to inform policy-making and encourage the
             widespread adoption of effective ABL practices.
           </p>
-        {/* </motion.div> */}
+          {/* </motion.div> */}
 
-        {/* <motion.div
+          {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -121,9 +121,9 @@ const ProjectOverviewPage = () => {
             economic empowerment in arid zones, fostering resilient and
             equitable communities.
           </p>
-        {/* </motion.div> */}
-</div>
-       
+          {/* </motion.div> */}
+        </div>
+
       </section>
     </div>
   );

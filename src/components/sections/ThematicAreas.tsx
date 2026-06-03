@@ -7,26 +7,26 @@ export default function ThematicAreas() {
     {
       id: 1,
       icon: <Leaf className="w-10 h-10 text-brand-orange" />,
-      title: "Sustainable Agriculture",
-      description: "Promoting dryland farming techniques, horticulture, and animal husbandry to ensure food security and improve crop yields.",
+      title: "Social Investment Design",
+      description: "Designing inclusive, risk-informed social investment portfolios that move beyond fragmented projects to long-term strategies.",
     },
     {
       id: 2,
       icon: <Droplets className="w-10 h-10 text-brand-orange" />,
-      title: "Water Management",
-      description: "Building rainwater harvesting structures to restore arid lands and provide clean drinking water to remote villages.",
+      title: "Framework Knowledge Transfer",
+      description: "Equipping leaders with actionable understanding of SDGs, ESG, and climate resilience frameworks.",
     },
     {
       id: 3,
       icon: <Users className="w-10 h-10 text-brand-orange" />,
-      title: "Women & Youth",
-      description: "Equipping marginalized groups with financial, digital, and entrepreneurial skills to foster true independence.",
+      title: "Ecosystem Resilience",
+      description: "Designing and guiding social investments that actively strengthen local ecosystems and enhance livelihoods.",
     },
     {
       id: 4,
       icon: <ShieldCheck className="w-10 h-10 text-brand-orange" />,
-      title: "Capacity Building",
-      description: "Forming and strengthening Community Based Organizations (CBOs) to ensure long-term, community-led growth.",
+      title: "Leadership for Sustainable Impact",
+      description: "Integrating ethics, resilience, and inclusive development into leadership education to prepare future leaders.",
     },
   ];
 
@@ -58,16 +58,16 @@ export default function ThematicAreas() {
             viewport={{ once: true }}
             className="uppercase tracking-widest text-brand-orange font-bold text-sm mb-4 block"
           >
-            Our Focus
+            Our Value Proposition
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-extrabold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6"
           >
-            Thematic Areas
+            What We Enable
           </motion.h2>
           <motion.div 
             initial={{ width: 0 }}
@@ -83,19 +83,19 @@ export default function ThematicAreas() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
         >
           {areas.map((area) => (
             <motion.div 
               key={area.id}
               variants={itemVariants}
-              className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[2.5rem] hover:bg-white/20 transition-all duration-300 group"
+              className="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-[1rem] hover:bg-white/20 transition-all duration-300 group"
             >
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-lg ">
                 {area.icon}
               </div>
               <h3 className="text-2xl font-bold mb-4">{area.title}</h3>
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <p className="text-gray-300 leading-relaxed text-md">
                 {area.description}
               </p>
             </motion.div>

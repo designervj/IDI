@@ -27,7 +27,7 @@ const OverViewPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold  leading-tight drop-shadow-lg tracking-wide">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold  leading-tight drop-shadow-lg tracking-wide">
             Overview
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-lg md:text-xl text-gray-100/90 leading-relaxed">
@@ -81,7 +81,7 @@ const OverViewPage = () => {
               and advocacy.
             </p>
 
-         
+
             <p className="text-gray-700 text-lg leading-relaxed mt-2">
               Upholding <strong>Gandhian ideals</strong> of Sarvodaya and Gram
               Swaraj, GRAVIS empowers rural communities to take ownership of

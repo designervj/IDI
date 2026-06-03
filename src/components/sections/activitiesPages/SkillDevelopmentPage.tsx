@@ -18,8 +18,8 @@ const SkillDevelopmentPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-             Skill Development and Entrepreneurship
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
+              Skill Development and Entrepreneurship
             </h1>
 
             <motion.p
@@ -27,7 +27,7 @@ const SkillDevelopmentPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
-             Empowering women and youth with financial and digital skills to foster enterprise development for income generation
+              Empowering women and youth with financial and digital skills to foster enterprise development for income generation
             </motion.p>
           </motion.div>
         </div>

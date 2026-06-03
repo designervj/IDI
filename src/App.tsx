@@ -5,30 +5,12 @@ import Header from "@/components/sections/Header";
 
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/sections/Footer";
-import CaseStudiesPage from "./components/sections/CaseStudiesPage";
-import MediaCoveragePage from "./components/sections/MediaCoveragePage";
-import WhatWeDoPage from "./components/sections/WhatWeDoPage";
-import OverViewPage from "./components/sections/OverViewPage";
-import HistoryPage from "./components/sections/HistoryPage";
-import MissionVisionPage from "./components/sections/MissionVisionPage";
-import GuidingPrinciplesPage from "./components/sections/GuidingPrinciplesPage";
-import PhotoGalleryPage from "./components/sections/PhotoGalleryPage";
-import ProjectOverviewPage from "./components/sections/ProjectOverviewPage";
-import ObjectivesPage from "./components/sections/ObjectivesPage";
-import ApproachPage from "./components/sections/ApproachPage";
-import FormationBuilding from "./components/sections/activitiesPages/FormationBuilding";
-import ImpactPage from "./components/sections/ImpactPage";
-import PublicationsPage from "./components/sections/PublicationsPage";
-import IECMaterialspage from "./components/sections/IECMaterialspage";
-import GetInvolvedPage from "./components/sections/GetInvolvedPage";
-import RainwaterFarming from "./components/sections/RainwaterFarming";
-import AnimalHusbandry from "./components/sections/activitiesPages/AnimalHusbandry";
-import SkillDevelopmentPage from "./components/sections/activitiesPages/SkillDevelopmentPage";
-import DocumentationPage from "./components/sections/activitiesPages/DocumentationPage";
-import { ComingSoon, LAUNCH_DATE } from "./components/sections/comingsoon";
+import VisionPage from "@/pages/VisionPage";
+import ServicesPage from "@/pages/ServicesPage";
+import MediaPage from "@/pages/MediaPage";
+import SupportersPage from "@/pages/SupportersPage";
+import OpportunitiesPage from "@/pages/OpportunitiesPage";
 import ContactUs from "./components/sections/ContactUs";
-import JobsPage from "./components/sections/JobsPage";
-import InternshipPage from "./components/sections/InternshipPage";
 
 export default function App() {
   // const isBeforeLaunch = new Date() < LAUNCH_DATE;
@@ -67,55 +49,12 @@ export default function App() {
       />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/case-studies" element={<CaseStudiesPage />} />
-        <Route path="/media" element={<MediaCoveragePage />} />
-        <Route path="/interventions" element={<WhatWeDoPage />} />
-        <Route path="/overview" element={<OverViewPage />} />
-        <Route path="/history" element={<HistoryPage />} />
-        <Route path="/history" element={<HistoryPage />} />
-        <Route
-          path="/mission-and-vision"
-          element={<MissionVisionPage />}
-        />{" "}
-        {/* Placeholder for Mission and Vision page */}
-        <Route
-          path="/guiding-principles"
-          element={<GuidingPrinciplesPage />}
-        />{" "}
-        {/* Placeholder for Mission and Vision page */}
-        <Route path="/photo-gallery" element={<PhotoGalleryPage />} />{" "}
-        {/* Placeholder for Mission and Vision page */}
-        <Route path="/project-overview" element={<ProjectOverviewPage />} />
-        <Route path="/objectives" element={<ObjectivesPage />} />
-        <Route path="/approach" element={<ApproachPage />} />
-        <Route
-          path="/formation-of-cbos-and-capacity-building"
-          element={<FormationBuilding />}
-        />
-        <Route path="/impact" element={<ImpactPage />} />
-        <Route path="/publications" element={<PublicationsPage />} />
-        <Route path="/iec-materials" element={<IECMaterialspage />} />
-        <Route path="/get-involved" element={<GetInvolvedPage />} />
-        <Route
-          path="/rainwater-harvesting-and-dryland-farming"
-          element={<RainwaterFarming />}
-        />
-        <Route
-          path="/horticulture-and-animal-husbandry"
-          element={<AnimalHusbandry />}
-        />
-        <Route
-          path="/skill-development-and-entrepreneurship"
-          element={<SkillDevelopmentPage />}
-        />
-        <Route
-          path="/documentation-and-advocacy"
-          element={<DocumentationPage />}
-        />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/jobs" element={<JobsPage />} />
-        <Route path="/internship" element={<InternshipPage />} />
-        {/* <Route path='/product' element={<ProductPage/>}/> */}
+        <Route path="/vision" element={<VisionPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/media" element={<MediaPage />} />
+        <Route path="/supporters" element={<SupportersPage />} />
+        <Route path="/opportunities" element={<OpportunitiesPage />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
 
       <Footer />

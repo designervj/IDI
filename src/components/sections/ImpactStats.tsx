@@ -5,23 +5,23 @@ import { Quote, MapPin, Heart, Leaf, Users, Droplets } from "lucide-react";
 
 const stories = [
   {
-    quote: "The rainwater harvesting structure built in our village changed everything. For the first time in decades, our crops survived the dry season.",
-    name: "Ramkali Devi",
-    role: "SHG Member, Jodhpur",
-    icon: <Droplets className="w-5 h-5" />,
+    quote: "IDI enabled us to bridge the gap between academic learning and real-world social investment challenges.",
+    name: "Academic Partner",
+    role: "Business School Leader",
+    icon: <Users className="w-5 h-5" />,
     delay: 0.1,
   },
   {
-    quote: "Through IDI's training programs, I learned sustainable farming techniques. My family's income doubled within one season.",
-    name: "Gopal Singh",
-    role: "Farmer, Barmer District",
+    quote: "We transitioned our philanthropic approach from compliance-driven CSR to creating shared value for long-term resilience.",
+    name: "Corporate Client",
+    role: "Head of CSR",
     icon: <Leaf className="w-5 h-5" />,
     delay: 0.2,
   },
   {
-    quote: "As a young woman in the Thar Desert, I never imagined running my own food processing unit. IDI made it possible.",
-    name: "Sunita Meena",
-    role: "Entrepreneur, Jaisalmer",
+    quote: "Thanks to IDI’s capability building, our on-ground delivery systems and monitoring frameworks are stronger than ever.",
+    name: "Implementation Partner",
+    role: "NGO Director",
     icon: <Heart className="w-5 h-5" />,
     delay: 0.3,
   },
@@ -29,30 +29,30 @@ const stories = [
 
 const pillars = [
   {
-    icon: <Droplets className="w-7 h-7 text-brand-blue" />,
-    title: "Water Resilience",
-    desc: "Reviving ancient rainwater harvesting systems like khadins to secure water for farming and daily life.",
+    icon: <Users className="w-7 h-7 text-brand-blue" />,
+    title: "Inclusive Strategy",
+    desc: "Intentionally reaching underserved groups and grounding investments in lived experience.",
     bg: "bg-blue-50",
     delay: 0.1,
   },
   {
     icon: <Leaf className="w-7 h-7 text-green-700" />,
-    title: "Sustainable Livelihoods",
-    desc: "Integrating horticulture, animal husbandry, and dryland farming for diversified, resilient income.",
+    title: "Creating Shared Value",
+    desc: "Moving beyond episodic giving toward approaches that embed ethical leadership and accountability.",
     bg: "bg-green-50",
     delay: 0.2,
   },
   {
-    icon: <Users className="w-7 h-7 text-brand-orange" />,
-    title: "Community Power",
-    desc: "Building Self-Help Groups and Intergenerational Learning Groups led by women and youth.",
+    icon: <Droplets className="w-7 h-7 text-brand-orange" />,
+    title: "Ecosystem Resilience",
+    desc: "Designing and guiding social investments that actively strengthen local ecosystems.",
     bg: "bg-orange-50",
     delay: 0.3,
   },
   {
     icon: <MapPin className="w-7 h-7 text-purple-600" />,
-    title: "Desert-Born Solutions",
-    desc: "Every strategy is rooted in the unique ecology and culture of the Thar Desert region.",
+    title: "Framework Translation",
+    desc: "Translating SDGs and ESG standards into practical decision-making and governance.",
     bg: "bg-purple-50",
     delay: 0.4,
   },
@@ -71,7 +71,7 @@ export default function ImpactStats() {
             viewport={{ once: true }}
             className="text-brand-orange font-semibold uppercase tracking-[0.25em] text-xs mb-3"
           >
-            Our Work on the Ground
+            The IDI Difference
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -80,7 +80,7 @@ export default function ImpactStats() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-brand-blue mb-4 leading-tight"
           >
-            Building Futures in the <span className="text-brand-orange">Thar Desert</span>
+            Connecting Theory, Practice, and <span className="text-brand-orange">Community Reality</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ export default function ImpactStats() {
             viewport={{ once: true }}
             className="text-gray-500 text-lg max-w-2xl mx-auto font-medium leading-relaxed"
           >
-            IDI works with the most vulnerable communities in Rajasthan — bringing together ancient wisdom, modern techniques, and local ownership to create lasting change.
+            IDI acts as a strategic bridge, aligning corporates, academic institutions, and civil society partners around inclusive design, ethical leadership, and sustainable impact.
           </motion.p>
         </div>
 
@@ -104,7 +104,7 @@ export default function ImpactStats() {
               viewport={{ once: true }}
               className="bg-white rounded-2xl border border-gray-100 shadow-md p-7 hover:shadow-lg transition-shadow"
             >
-              <div className={`w-14 h-14 ${p.bg} rounded-xl flex items-center justify-center mb-5`}>
+              <div className={`w-14 h-14 ${p.bg} rounded-2xl flex items-center justify-center mb-5`}>
                 {p.icon}
               </div>
               <h3 className="text-lg font-semibold text-brand-blue mb-2">{p.title}</h3>
@@ -150,7 +150,7 @@ export default function ImpactStats() {
                 </p>
               </div>
               <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
-                <div className="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white shrink-0">
+                <div className="w-10 h-10 bg-brand-blue rounded-2xl flex items-center justify-center text-white shrink-0">
                   {s.icon}
                 </div>
                 <div>

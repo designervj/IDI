@@ -63,7 +63,7 @@ const SliderBrand = () => {
           {features.map((item, i) => (
             <div
               key={i}
-              className="relative flex flex-col items-center justify-center text-center border border-gray-200 rounded-lg py-10 px-6 hover:shadow-md transition-all duration-300"
+              className="relative flex flex-col items-center justify-center text-center border border-gray-200 rounded-2xl py-10 px-6 hover:shadow-md transition-all duration-300"
               style={{borderRadius:"14px"}}
             >
               <div className=" absolute -top-8 flex items-center justify-center w-16 h-16 bg-white unded-md mb-5">

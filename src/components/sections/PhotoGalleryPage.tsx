@@ -97,7 +97,7 @@ const GalleryCard = ({
   return (
     <div
       onClick={onClick}
-      className="relative cursor-pointer overflow-hidden rounded-xl shadow-md bg-white group"
+      className="relative cursor-pointer overflow-hidden rounded-2xl shadow-md bg-white group"
     >
       {!loaded && (
         <div className="absolute inset-0 bg-gray-200 animate-pulse" />
@@ -108,9 +108,8 @@ const GalleryCard = ({
         loading="lazy"
         decoding="async"
         onLoad={() => setLoaded(true)}
-        className={`w-full h-64 object-cover transition-transform duration-500 ${
-          loaded ? "opacity-100" : "opacity-0"
-        } group-hover:scale-110`}
+        className={`w-full h-64 object-cover transition-transform duration-500 ${loaded ? "opacity-100" : "opacity-0"
+          } group-hover:scale-110`}
       />
 
       <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
@@ -143,7 +142,7 @@ const PhotoGalleryPage = () => {
     <div className="bg-[#F7F8F6] min-h-screen">
       {/* Header */}
       <div className="h-[40vh] flex items-center justify-center bg-[#123751] text-white">
-        <h1 className="text-5xl font-extrabold">Photo Gallery</h1>
+        <h1 className="text-5xl font-bold">Photo Gallery</h1>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-20">
@@ -166,7 +165,7 @@ const PhotoGalleryPage = () => {
           <button
             disabled={page === 1}
             onClick={() => setPage((p) => p - 1)}
-            className="px-5 py-2 rounded-lg border bg-white disabled:opacity-40"
+            className="px-5 py-2 rounded-2xl border bg-white disabled:opacity-40"
           >
             Prev
           </button>
@@ -178,7 +177,7 @@ const PhotoGalleryPage = () => {
           <button
             disabled={page === totalPages}
             onClick={() => setPage((p) => p + 1)}
-            className="px-5 py-2 rounded-lg border bg-white disabled:opacity-40"
+            className="px-5 py-2 rounded-2xl border bg-white disabled:opacity-40"
           >
             Next
           </button>
@@ -196,7 +195,7 @@ const PhotoGalleryPage = () => {
           </button>
           <img
             src={selected}
-            className="max-h-[90vh] rounded-xl shadow-2xl"
+            className="max-h-[90vh] rounded-2xl shadow-2xl"
           />
         </div>
       )}

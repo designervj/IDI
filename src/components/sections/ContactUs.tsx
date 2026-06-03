@@ -16,7 +16,7 @@ export default function ContactUs() {
   };
 
   const inputClass =
-    "w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-700 text-sm placeholder:text-gray-300 focus:outline-none focus:border-brand-orange focus:bg-white transition-all font-medium";
+    "w-full bg-gray-50 border border-gray-200 rounded-2xl px-4 py-3 text-gray-700 text-sm placeholder:text-gray-300 focus:outline-none focus:border-brand-orange focus:bg-white transition-all font-medium";
 
   return (
     <main className="bg-[#f9f9f9] min-h-screen">
@@ -45,7 +45,7 @@ export default function ContactUs() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-blue-200 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light"
+            className="text-blue-200  max-w-xl mx-auto leading-relaxed font-light"
           >
             Questions, partnerships, or just a hello — we'd love to hear from you.
 
@@ -60,13 +60,13 @@ export default function ContactUs() {
             {
               Icon: MapPin,
               label: "Our Office",
-              value: "3/437, M.M Colony, Pal Road, Jodhpur – 342008",
+              value: "67/145, Sector 6, Pratap Nagar Housing Board, Jagriti Marg, Jaipur- 302033",
               accent: "bg-brand-orange/10 text-brand-orange",
             },
             {
               Icon: PhoneCall,
               label: "Phone",
-              value: "+91 94140 59185",
+              value: "+91 7830029106",
               accent: "bg-brand-blue/10 text-brand-blue",
             },
             {
@@ -83,7 +83,7 @@ export default function ContactUs() {
               transition={{ delay: 0.15 + i * 0.1 }}
               className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 flex items-start gap-4 hover:shadow-lg transition-shadow"
             >
-              <span className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${accent}`}>
+              <span className={`w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 ${accent}`}>
                 <Icon className="w-5 h-5" />
               </span>
               <div>
@@ -105,7 +105,7 @@ export default function ContactUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 bg-white rounded-3xl border border-gray-100 shadow-lg p-8 md:p-10"
+            className="lg:col-span-2 bg-white rounded-2xl border border-gray-100 shadow-lg p-8 md:p-10"
           >
             {submitted ? (
               <div className="flex flex-col items-center justify-center py-16 text-center gap-5">
@@ -123,7 +123,7 @@ export default function ContactUs() {
                 </div>
                 <button
                   onClick={() => { setSubmitted(false); setForm({ name: "", email: "", subject: "", message: "" }); }}
-                  className="px-5 py-2 rounded-xl bg-brand-orange text-white text-sm font-medium hover:bg-brand-orange/90 transition-all"
+                  className="px-5 py-2 rounded-2xl bg-brand-orange text-white text-sm font-medium hover:bg-brand-orange/90 transition-all"
                 >
                   Send Another
                 </button>
@@ -188,7 +188,7 @@ export default function ContactUs() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.97 }}
                     type="submit"
-                    className="inline-flex items-center gap-2 px-8 py-3 bg-brand-orange text-white text-sm font-medium rounded-xl shadow-md shadow-brand-orange/20 hover:bg-brand-orange/90 transition-all"
+                    className="inline-flex items-center gap-2 px-8 py-3 bg-brand-orange text-white text-sm font-medium rounded-2xl shadow-md shadow-brand-orange/20 hover:bg-brand-orange/90 transition-all"
                   >
                     Send Message
                     <Send className="w-4 h-4" />
@@ -207,7 +207,7 @@ export default function ContactUs() {
             className="flex flex-col gap-6"
           >
             {/* Working Hours */}
-            <div className="bg-brand-blue rounded-3xl p-7 text-white">
+            <div className="bg-brand-blue rounded-2xl p-7 text-white">
               <div className="flex items-center gap-2 mb-5">
                 <Clock className="w-4 h-4 text-brand-orange" />
                 <p className="text-xs font-medium uppercase tracking-wider text-brand-orange">Office Hours</p>
@@ -227,20 +227,21 @@ export default function ContactUs() {
             </div>
 
             {/* Social Media */}
-            <div className="bg-white rounded-3xl border border-gray-100 shadow-md p-7">
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-7">
               <p className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-4">Follow Us</p>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { Icon: Facebook, label: "Facebook", bg: "hover:bg-blue-600" },
-                  { Icon: Twitter, label: "Twitter", bg: "hover:bg-sky-500" },
-                  { Icon: Instagram, label: "Instagram", bg: "hover:bg-pink-500" },
-                  { Icon: Linkedin, label: "LinkedIn", bg: "hover:bg-blue-700" },
-                ].map(({ Icon, label, bg }) => (
+                  // { Icon: Facebook, label: "Facebook", bg: "hover:bg-blue-600", link: "#" },
+                  
+                  // { Icon: Instagram, label: "Instagram", bg: "hover:bg-pink-500", link: "#" },
+                  { Icon: Linkedin, label: "LinkedIn", bg: "hover:bg-blue-700", link: "https://www.linkedin.com/company/inclusive-development-initiatives/" },
+                  { Icon: Twitter, label: "Twitter", bg: "hover:bg-sky-500", link: "#" },
+                ].map(({ Icon, label, bg, link }) => (
                   <motion.a
                     key={label}
-                    href="#"
+                    href={link}
                     whileHover={{ y: -2 }}
-                    className={`flex items-center gap-2 text-gray-500 text-sm font-medium bg-gray-50 rounded-xl px-3 py-2.5 border border-gray-100 transition-all ${bg} hover:text-white hover:border-transparent`}
+                    className={`flex items-center gap-2 text-gray-500 text-sm font-medium bg-gray-50 rounded-2xl px-3 py-2.5 border border-gray-100 transition-all ${bg} hover:text-white hover:border-transparent`}
                   >
                     <Icon className="w-4 h-4" /> {label}
                   </motion.a>
@@ -256,16 +257,17 @@ export default function ContactUs() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-10 rounded-3xl overflow-hidden border-4 border-white shadow-xl h-72 md:h-96"
+          className="mt-10 rounded-2xl overflow-hidden border-4 border-white shadow-xl h-72 md:h-96"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.85!2d72.9691!3d26.2663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c5456789abc%3A0x0!2sJodhpur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1714900000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.074025429075!2d75.80674601101472!3d26.80577147661381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc9a05448fa3d%3A0x2b931303ab678615!2sHealth%20Environment%20and%20Development%20Consortium%20(HEDCON)!5e0!3m2!1sen!2sin!4v1780482997616!5m2!1sen!2sin"
             width="100%" height="100%"
             style={{ border: 0 }}
             allowFullScreen loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="IDI Office Location"
           ></iframe>
+
         </motion.div>
       </section>
     </main>

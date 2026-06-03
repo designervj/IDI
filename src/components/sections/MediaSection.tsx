@@ -129,7 +129,7 @@ export default function MediaSection() {
         </div>
 
         {/* <div className="text-center mt-12 ">
-          <button className="inline-flex items-center gap-2 bg-[#008a2c] hover:bg-[#5B8A35] text-white px-6 py-3 font-semibold transition-colors duration-300"
+          <button className="inline-flex items-center gap-2 bg-[#008a2c] hover:bg-[#5B8A35] text-white py-2.5 px-6 text-base font-semibold transition-colors duration-300"
           style={{borderRadius:"6px"}}
           >
             See All News

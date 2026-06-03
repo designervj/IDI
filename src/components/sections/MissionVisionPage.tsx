@@ -27,8 +27,8 @@ const MissionVisionPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
-            Mission and  Vision 
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
+            Mission and  Vision
           </h1>
 
           <motion.p
@@ -37,9 +37,9 @@ const MissionVisionPage = () => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed"
           >
-           GRAVIS is inspired by Gandhian principles for community-led development
+            GRAVIS is inspired by Gandhian principles for community-led development
           </motion.p>
-          
+
         </motion.div>
 
         {/* Decorative Bottom Wave */}
@@ -49,7 +49,7 @@ const MissionVisionPage = () => {
       <section className="bg-[#F7F8F6] py-20 px-6 md:px-20 text-gray-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-1 gap-10 items-center">
           {/* Left: Image */}
-           <motion.div
+          <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -77,7 +77,7 @@ const MissionVisionPage = () => {
               religion.
             </p>
 
-             <p className="text-lg leading-relaxed text-gray-700 pt-4">
+            <p className="text-lg leading-relaxed text-gray-700 pt-4">
               To achieve this, GRAVIS embraces Gram Swaraj, or village
               self-rule. This philosophy promotes independent, self-sufficient
               villages. Interventions are therefore planned and executed
@@ -89,7 +89,7 @@ const MissionVisionPage = () => {
 
           </motion.div>
 
-         
+
 
         </div>
 
@@ -103,7 +103,7 @@ const MissionVisionPage = () => {
  </div> */}
       </section>
 
-   
+
     </div>
   );
 };

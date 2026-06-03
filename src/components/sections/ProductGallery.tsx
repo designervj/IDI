@@ -98,7 +98,7 @@ export default function ProductGallery({ images }: { images: string[] }) {
                   setActive(i);
                   mainSwiperRef.current?.slideTo(i);
                 }}
-                className={`overflow-hidden rounded-lg border transition-all duration-300 p-1 ${
+                className={`overflow-hidden rounded-2xl border transition-all duration-300 p-1 ${
                   active === i
                     ? "border-[#FF7020] ring-2 ring-[#FF7020]/30 "
                     : "border-[#E2E2E2]"

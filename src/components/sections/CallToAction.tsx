@@ -8,9 +8,9 @@ export default function CallToAction() {
     <section className="relative py-24 overflow-hidden">
       {/* Background with Image and Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/assets/Image/home-slider-images/hero-slider-imges1.png" 
-          alt="Community support" 
+        <img
+          src="/assets/Image/home-slider-images/hero-slider-imges1.png"
+          alt="Community support"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-brand-blue/90 mix-blend-multiply"></div>
@@ -29,26 +29,25 @@ export default function CallToAction() {
               <Heart className="w-4 h-4 fill-current" />
               Join Our Mission
             </span>
-            <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
-              Every Action Counts. <br />
-              <span className="text-brand-orange">Help Us Build</span> a Better Future.
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+              Enable Transformative <br />
+              <span className="text-brand-orange">Change</span> Together.
             </h2>
             <p className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-              Your support empowers rural communities to become self-reliant through sustainable 
-              agriculture, water conservation, and skill development. Partner with us today.
+              Your support enables inclusive, ethically governed social investment that creates shared value for institutions and communities. Partner with us today to bridge theory, practice, and community reality.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-6">
-              <Link 
-                to="/get-involved"
-                className="inline-flex items-center justify-center gap-3 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-4 px-10 rounded-2xl transition-all shadow-xl hover:shadow-brand-orange/20 hover:-translate-y-1 text-lg group"
+              <Link
+                to="/opportunities"
+                className="inline-flex items-center justify-center gap-3 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-2.5 px-6 text-base rounded-2xl transition-all shadow-xl hover:shadow-brand-orange/20 hover:-translate-y-1 group"
               >
-                Become a Partner
+                Explore Opportunities
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link 
-                to="/contact-us"
-                className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold py-4 px-10 rounded-2xl transition-all hover:-translate-y-1 text-lg"
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white font-bold py-2.5 px-6 text-base rounded-2xl transition-all hover:-translate-y-1 text-lg"
               >
                 Contact Us
               </Link>

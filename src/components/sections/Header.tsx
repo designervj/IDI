@@ -44,11 +44,17 @@ const Header = () => {
               <Link to="/" className="hover:text-brand-orange transition-colors">
                 Home
               </Link>
-              <Link to="/" className="hover:text-brand-orange transition-colors">
-                What we do
+              <Link to="/vision" className="hover:text-brand-orange transition-colors">
+                Vision
               </Link>
-              <Link to="/approach" className="hover:text-brand-orange transition-colors">
-                Approach
+              <Link to="/services" className="hover:text-brand-orange transition-colors">
+                Services
+              </Link>
+              <Link to="/media" className="hover:text-brand-orange transition-colors">
+                Media & Photos
+              </Link>
+              <Link to="/supporters" className="hover:text-brand-orange transition-colors">
+                Key Supporters
               </Link>
               
               {/* Opportunities Dropdown */}
@@ -68,21 +74,15 @@ const Header = () => {
                   }`}
                 >
                   <Link
-                    to="/jobs"
-                    className="block px-6 py-3 hover:bg-[#f3f8f2] text-gray-700 text-start rounded-t-2xl"
+                    to="/opportunities"
+                    className="block py-2.5 px-6 text-base hover:bg-[#f3f8f2] text-gray-700 text-start rounded-t-2xl"
                   >
-                    Jobs
-                  </Link>
-                  <Link
-                    to="/internship"
-                    className="block px-6 py-3 hover:bg-[#f3f8f2] text-gray-700 text-start rounded-b-2xl"
-                  >
-                    Internship
+                    Careers
                   </Link>
                 </div>
               </div>
 
-              <Link to="/contact-us" className="hover:text-brand-orange transition-colors font-bold text-brand-blue">
+              <Link to="/contact" className="hover:text-brand-orange transition-colors font-bold text-brand-blue">
                 Contact Us
               </Link>
             </nav>
@@ -92,7 +92,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="flex items-center justify-center border border-gray-300 rounded-xl p-2 bg-white/70 shadow-sm"
+              className="flex items-center justify-center border border-gray-300 rounded-2xl p-2 bg-white/70 shadow-sm"
               aria-label="Toggle navigation menu"
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -110,21 +110,27 @@ const Header = () => {
         }`}
       >
         <nav className="space-y-1">
-          <Link to="/" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
+          <Link to="/" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-2xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
             Home
           </Link>
-          <Link to="/interventions" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
-            What we do
+          <Link to="/vision" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-2xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
+            Vision
           </Link>
-          <Link to="/approach" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
-            Approach
+          <Link to="/services" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-2xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
+            Services
+          </Link>
+          <Link to="/media" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-2xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
+            Media & Photos
+          </Link>
+          <Link to="/supporters" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-2xl hover:bg-gray-50 hover:text-brand-orange transition-colors">
+            Key Supporters
           </Link>
 
           {/* Opportunities Mobile Dropdown */}
           <div className="border-t border-gray-100 py-1">
             <button
               onClick={() => toggleDropdown("Opportunities")}
-              className="flex items-center justify-between w-full py-3 px-4 rounded-xl hover:bg-gray-50 hover:text-brand-orange transition-colors"
+              className="flex items-center justify-between w-full py-3 px-4 rounded-2xl hover:bg-gray-50 hover:text-brand-orange transition-colors"
             >
               <span>Opportunities</span>
               <ChevronDown
@@ -135,17 +141,14 @@ const Header = () => {
             </button>
             {openDropdown === "Opportunities" && (
               <div className="pl-6 pb-2 space-y-1">
-                <Link to="/jobs" onClick={toggleMobileMenu} className="block py-2 text-gray-600 hover:text-brand-orange">
-                  Jobs
-                </Link>
-                <Link to="/internship" onClick={toggleMobileMenu} className="block py-2 text-gray-600 hover:text-brand-orange">
-                  Internship
+                <Link to="/opportunities" onClick={toggleMobileMenu} className="block py-2 text-gray-600 hover:text-brand-orange">
+                  Careers
                 </Link>
               </div>
             )}
           </div>
 
-          <Link to="/contact-us" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-xl bg-brand-blue/5 text-brand-blue font-bold hover:text-brand-orange transition-colors">
+          <Link to="/contact-us" onClick={toggleMobileMenu} className="block py-3 px-4 rounded-2xl bg-brand-blue/5 text-brand-blue font-bold hover:text-brand-orange transition-colors">
             Contact Us
           </Link>
         </nav>

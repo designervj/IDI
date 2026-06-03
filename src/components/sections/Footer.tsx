@@ -18,22 +18,16 @@ export default function Footer() {
           
           {/* Column 1: Brand */}
           <div className="flex flex-col">
-            <img src="/assets/Image/idi-logo.png" alt="IDI Logo" className="h-20 w-auto bg-white p-3 rounded-xl mb-6 self-start shadow-md"></img>
+            <img src="/assets/Image/idi-logo.png" alt="IDI Logo" className="h-20 w-auto bg-white p-3 rounded-2xl mb-6 self-start shadow-md"></img>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Inclusive Development Initiative (IDI) is committed to empowering communities through sustainable agriculture, capacity building, and innovative solutions.
+              Inclusive Development Initiatives (IDI) is a consulting and advisory firm committed to people-centered transformative development.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors duration-300">
-                <FaFacebookF className="w-4 h-4" />
+              <a href="https://www.linkedin.com/company/inclusive-development-initiatives/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors duration-300">
+                <FaLinkedinIn className="w-4 h-4" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors duration-300">
                 <FaTwitter className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors duration-300">
-                <FaInstagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors duration-300">
-                <FaLinkedinIn className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -51,22 +45,22 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/interventions" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> What we do
+                <Link to="/vision" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> Vision
                 </Link>
               </li>
               <li>
-                <Link to="/approach" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> Approach
+                <Link to="/services" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> Services Offered
                 </Link>
               </li>
               <li>
-                <Link to="/jobs" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
-                  <span className="text-brand-orange text-xs">▹</span> Opportunities
+                <Link to="/media" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                  <span className="text-brand-orange text-xs">▹</span> Media & Photos
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
+                <Link to="/contact" className="hover:text-brand-orange transition-colors duration-300 flex items-center gap-2">
                   <span className="text-brand-orange text-xs">▹</span> Contact Us
                 </Link>
               </li>
@@ -86,8 +80,9 @@ export default function Footer() {
                   <MapPin className="w-5 h-5 text-brand-orange" />
                 </div>
                 <p className="leading-relaxed mt-1">
-                  3/437, 458, M.M Colony, Pal Road,<br/>
-                  Jodhpur – 342008, Rajasthan, India
+                  Inclusive Development Initiatives,<br/>
+                  67/145, Sector 6, Pratap Nagar Housing Board,<br/>
+                  Jagriti Marg, Jaipur - 302033, Rajasthan, India
                 </p>
               </div>
               
@@ -95,8 +90,8 @@ export default function Footer() {
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shrink-0">
                   <PhoneCall className="w-5 h-5 text-brand-orange" />
                 </div>
-                <a href="tel:+919414059185" className="hover:text-brand-orange transition-colors">
-                  +91 94140 59185
+                <a href="tel:+917830029106" className="hover:text-brand-orange transition-colors">
+                  +91 7830029106
                 </a>
               </div>
               
@@ -114,7 +109,7 @@ export default function Footer() {
       
         {/* Divider & Copyright */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Inclusive Development Initiative. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Inclusive Development Initiatives LLP. All Rights Reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>

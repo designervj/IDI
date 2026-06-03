@@ -43,7 +43,7 @@ export default function Partners() {
           viewport={{ once: true }}
           className="text-3xl md:text-5xl font-black text-brand-blue uppercase tracking-tight mb-16"
         >
-          Supported By Our <span className="text-brand-orange">Valued Partners</span>
+          Our Strategic <span className="text-brand-orange">Network & Partners</span>
         </motion.h3>
         
         <motion.div 

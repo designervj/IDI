@@ -58,7 +58,7 @@ export default function HeroSlider() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="uppercase tracking-[0.2em] md:tracking-[0.3em] text-brand-orange font-black text-[10px] md:text-sm mb-4 md:mb-6 block drop-shadow-md bg-white/10 backdrop-blur-md px-4 md:px-6 py-1.5 md:py-2 rounded-full border border-white/20"
           >
-            Inclusive Development Initiative
+            Inclusive Development Initiatives
           </motion.span>
           
           <motion.h1 
@@ -67,8 +67,8 @@ export default function HeroSlider() {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-white text-3xl md:text-6xl lg:text-7xl font-bold font-black leading-[1.1] md:leading-[0.9] mb-6 md:mb-8 drop-shadow-2xl px-2"
           >
-            Empowering <span className="text-brand-orange">Communities</span> <br className="hidden md:block" />
-            For a <span className="italic font-serif">Better</span> Future.
+            People-Centered <br className="hidden md:block" />
+            <span className="text-brand-orange">Transformative</span> <span className="italic font-serif">Development</span>.
           </motion.h1>
           
           <motion.p 
@@ -77,7 +77,7 @@ export default function HeroSlider() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-gray-200 text-base md:text-2xl mb-8 md:mb-12 max-w-3xl leading-relaxed drop-shadow-md font-medium px-10 md:px-4"
           >
-            We are committed to people-centered transformative development through sustainable agriculture, capacity building, and innovative solutions.
+            We work at the intersection of social investment, inclusive development, leadership education, and institutional strengthening to support long-term, equitable outcomes.
           </motion.p>
           
           <motion.div 
@@ -87,17 +87,17 @@ export default function HeroSlider() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link 
-              to="/interventions"
-              className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-2.5 px-6 md:py-3.5 md:px-8 rounded-xl md:rounded-2xl transition-all shadow-xl hover:shadow-brand-orange/30 hover:-translate-y-0.5 text-sm md:text-lg group"
+              to="/services"
+              className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-bold py-2.5 px-6 text-base  rounded-2xl md:rounded-2xl transition-all shadow-xl hover:shadow-brand-orange/30 hover:-translate-y-0.5 text-sm md:group"
             >
-              Discover Our Work
+              Our Services
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link 
-              to="/get-involved"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border-2 border-white/50 text-white font-bold py-2.5 px-6 md:py-3.5 md:px-8 rounded-xl md:rounded-2xl transition-all hover:-translate-y-0.5 shadow-xl text-sm md:text-lg"
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border-2 border-white/50 text-white font-bold py-2.5 px-6 text-base  rounded-2xl md:rounded-2xl transition-all hover:-translate-y-0.5 shadow-xl text-sm"
             >
-              Get Involved
+              Contact Us
             </Link>
           </motion.div>
         </div>
@@ -107,15 +107,15 @@ export default function HeroSlider() {
       <div className="absolute inset-y-0 left-0 right-0 flex justify-between items-center px-2 md:px-10 z-20 pointer-events-none">
         <button
           onClick={prevSlide}
-          className="pointer-events-auto p-2 md:p-4 bg-white/10 hover:bg-white/30 backdrop-blur-md border border-white/30 text-white rounded-full transition-all hover:scale-110 group"
+          className="pointer-events-auto p-2 md:p-2  bg-white/10 hover:bg-white/30 backdrop-blur-md border border-white/30 text-white rounded-[50%] transition-all  group"
         >
-          <ChevronLeft className="w-4 h-4 md:w-10 md:h-10 group-hover:-translate-x-1 transition-transform" />
+          <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 group-hover:-translate-x-1 transition-transform" />
         </button>
         <button
           onClick={nextSlide}
-          className="pointer-events-auto p-2 md:p-4 bg-white/10 hover:bg-white/30 backdrop-blur-md border border-white/30 text-white rounded-full transition-all hover:scale-110 group"
+          className="pointer-events-auto p-2 md:p-2 rounded-full bg-white/10 hover:bg-white/30 backdrop-blur-md border border-white/30 text-white rounded-[50%] transition-all group"
         >
-          <ChevronRight className="w-4 h-4 md:w-10 md:h-10 group-hover:translate-x-1 transition-transform" />
+          <ChevronRight className="w-4 h-4 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
 

@@ -51,33 +51,33 @@ export const ComingSoon = () => {
             Coming Soon 
           </h1>
 
-          <p className="md:text-lg text-sm text-[#008a2c] mb-8 font-semibold ">
+          <p className="md:text-sm text-[#008a2c] mb-8 font-semibold ">
          Strengthening Agriculture-Based Livelihoods In The Thar Desert (SABL)
           </p>
 
           <div className="grid grid-cols-4 gap-1 mb-8">
-            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
+            <div className="bg-indigo-50 rounded-2xl md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.days}
               </div>
               <div className="md:text-sm text-[11px] text-center  text-gray-600 mt-1">Days</div>
             </div>
 
-            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
+            <div className="bg-indigo-50 rounded-2xl md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.hours}
               </div>
               <div className="md:text-sm text-[11px] text-gray-600 mt-1">Hours</div>
             </div>
 
-            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
+            <div className="bg-indigo-50 rounded-2xl md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.minutes}
               </div>
               <div className="md:text-sm text-[11px] text-gray-600 mt-1">Minutes</div>
             </div>
 
-            <div className="bg-indigo-50 rounded-lg md:p-4 py-4">
+            <div className="bg-indigo-50 rounded-2xl md:p-4 py-4">
               <div className="text-3xl font-bold text-indigo-600">
                 {timeRemaining.seconds}
               </div>

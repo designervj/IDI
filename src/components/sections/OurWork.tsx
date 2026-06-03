@@ -52,7 +52,7 @@ export default function OurWork() {
               href={program.pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group relative"
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group relative"
             >
               {/* IMAGE */}
               <div className="relative w-full h-72 overflow-hidden">

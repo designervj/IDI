@@ -50,7 +50,7 @@ const ImpactPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
             Impact
           </h1>
         </motion.div>
@@ -78,7 +78,7 @@ const ImpactPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-md border-l-4 border-green-600 p-6 sm:p-8 hover:shadow-lg transition-all">
+                className="bg-white rounded-2xl shadow-md border-l-4 border-green-600 p-6 sm:p-8 hover:shadow-lg transition-all">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-green-700 mb-4">
                   {impact.id}. {impact.title}
                 </h2>
