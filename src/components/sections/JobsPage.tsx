@@ -18,9 +18,9 @@ export default function JobsPage() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Current Openings */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
             <div className="flex items-center gap-4 mb-6">
-              <div className="p-3 bg-brand-orange/10 rounded-lg">
+              <div className="p-3 bg-brand-orange/10 rounded-2xl">
                 <Briefcase className="w-8 h-8 text-brand-orange" />
               </div>
               <h3 className="text-2xl font-semibold text-brand-blue">Current Openings</h3>
@@ -28,15 +28,15 @@ export default function JobsPage() {
             <p className="text-gray-600 mb-6">
               Explore full-time and part-time positions with ID Initiatives. Help us build resilient communities.
             </p>
-            <div className="p-4 bg-gray-50 rounded-lg text-center text-gray-500">
+            <div className="p-4 bg-gray-50 rounded-2xl text-center text-gray-500">
               No current openings at the moment. Please check back later.
             </div>
           </div>
 
           {/* Internship Program */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
             <div className="flex items-center gap-4 mb-6">
-              <div className="p-3 bg-brand-blue/10 rounded-lg">
+              <div className="p-3 bg-brand-blue/10 rounded-2xl">
                 <Briefcase className="w-8 h-8 text-brand-blue" />
               </div>
               <h3 className="text-2xl font-semibold text-brand-blue">Internship Program</h3>
@@ -46,7 +46,7 @@ export default function JobsPage() {
             </p>
             <Link
               to="/internship"
-              className="inline-flex items-center justify-center gap-2 w-full bg-brand-blue hover:bg-brand-blue/90 text-white font-semibold py-3 rounded-lg transition-colors duration-300"
+              className="inline-flex items-center justify-center gap-2 w-full bg-brand-blue hover:bg-brand-blue/90 text-white font-semibold py-3 rounded-2xl transition-colors duration-300"
             >
               Learn More <ArrowRight className="w-5 h-5" />
             </Link>

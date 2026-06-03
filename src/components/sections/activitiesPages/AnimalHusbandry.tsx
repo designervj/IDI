@@ -18,7 +18,7 @@ const AnimalHusbandry = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
               Horticulture and Animal Husbandry
             </h1>
 
@@ -27,7 +27,7 @@ const AnimalHusbandry = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
               className="max-w-3xl mx-auto mt-6 text-base sm:text-lg md:text-xl text-gray-100/90 leading-relaxed">
-             Establishing  AHUs and silvipasture units to ensure sustainable food, fodder and income for communities and livestock
+              Establishing  AHUs and silvipasture units to ensure sustainable food, fodder and income for communities and livestock
             </motion.p>
           </motion.div>
         </div>
@@ -45,7 +45,7 @@ const AnimalHusbandry = () => {
           <img
             src="./assets/Image/AHU-Farm-First-image.jpg"
             // Animal-Husbandry-Option
-            
+
             alt="CBO Training"
             className="rounded-2xl shadow-lg object-cover w-full"
           />

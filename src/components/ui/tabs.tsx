@@ -47,7 +47,7 @@ export function TabsTrigger({
       onClick={() => ctx.setValue(value)}
       style={{borderRadius:"6px"}}
       className={cn(
-        "px-5 py-2 text-[16px] font-medium rounded-lg transition-all duration-200 shadow-none",
+        "px-5 py-2 text-[16px] font-medium rounded-2xl transition-all duration-200 shadow-none",
         active
           ? "bg-[#F3F3F3] text-[#FF7020] shadow-inner"
           : "text-[#4F4640] hover:bg-gray-100 hover:text-[#FF7020]",

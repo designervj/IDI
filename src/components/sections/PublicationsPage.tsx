@@ -14,7 +14,7 @@ const PublicationsPage = () => {
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
               Publications
             </h1>
           </motion.div>
@@ -33,7 +33,7 @@ const PublicationsPage = () => {
         >
           <h2 className="text-3xl font-bold text-gray-700 mb-4">Coming Soon</h2>
           <p className="text-gray-500 text-lg">
-           We’re working on gathering the relevant information. It will be published here in the near future. Stay tuned!          </p>
+            We’re working on gathering the relevant information. It will be published here in the near future. Stay tuned!          </p>
         </motion.div>
       </div>
     </div>

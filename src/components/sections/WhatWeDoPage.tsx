@@ -81,8 +81,8 @@ export default function WhatWeDoPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="relative pb-10 z-10 flex flex-col items-center justify-center text-center text-white px-6">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
-           Interventions
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight drop-shadow-lg">
+            Interventions
           </h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -106,7 +106,7 @@ export default function WhatWeDoPage() {
           tackling multiple issues simultaneously to foster overall improvement.
 
         </p>
-                 {/* Through partnerships with CBOs, living standards of villagers are enhanced. */}
+        {/* Through partnerships with CBOs, living standards of villagers are enhanced. */}
       </section>
 
       {/* 🪴 MAIN CONTENT SECTIONS */}
@@ -117,9 +117,8 @@ export default function WhatWeDoPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className={`flex flex-col md:flex-row items-center max-w-6xl mx-auto py-16 px-6 gap-10 ${
-            index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          }`}>
+          className={`flex flex-col md:flex-row items-center max-w-6xl mx-auto py-16 px-6 gap-10 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            }`}>
           {/* Image */}
           <div className="w-full md:w-1/2">
             <div className="overflow-hidden rounded-2xl shadow-lg">

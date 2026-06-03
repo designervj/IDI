@@ -78,7 +78,7 @@ const WhatsNew = () => {
                 <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                   <video
                     ref={(el) => (videoRefs.current[index] = el!)}
-                    className="absolute top-0 left-0 w-full h-full rounded-xl"
+                    className="absolute top-0 left-0 w-full h-full rounded-2xl"
                     src={video.url}
                     controls
                     muted

@@ -43,3 +43,11 @@ color: var(--brand-blue, #0b5394);
   z-index: 0;
 }
 
+/* ── Global: all buttons get 10px border-radius ── */
+button,
+a[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  border-radius: 10px !important;
+}

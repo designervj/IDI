@@ -12,14 +12,14 @@ const ApproachPage = () => {
     <div className="bg-gray-50 text-gray-800">
       {/* ---------- Hero Section ---------- */}
 
-      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#123751]">
+      <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center bg-[#1e6c93]">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
               Our Approach
             </h1>
           </motion.div>
@@ -36,7 +36,7 @@ const ApproachPage = () => {
             className="rounded-2xl shadow-lg w-full object-cover"
           />
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Community-centric empowerment
             </h2>
             <p>
@@ -54,7 +54,7 @@ const ApproachPage = () => {
         {/* ---------- Section 2 ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Integrated livelihood approach
             </h2>
             <p>
@@ -81,7 +81,7 @@ const ApproachPage = () => {
             className="rounded-2xl shadow-lg w-full object-cover"
           />
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Capacity building and knowledge transfer
             </h2>
             <p className="mb-4">
@@ -113,7 +113,7 @@ const ApproachPage = () => {
         {/* ---------- Section 4 ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Entrepreneurship and market linkages
             </h2>
             <p>
@@ -139,7 +139,7 @@ const ApproachPage = () => {
             className="rounded-2xl shadow-lg w-full h-[440px] object-cover"
           />
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Leveraging traditional wisdom and modern techniques
             </h2>
             <p>
@@ -154,7 +154,7 @@ const ApproachPage = () => {
         {/* ---------- Section 6 ---------- */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Advocacy and policy influence
             </h2>
             <p>
@@ -180,7 +180,7 @@ const ApproachPage = () => {
             className="rounded-2xl shadow-lg w-full object-cover"
           />
           <motion.div>
-            <h2 className="text-2xl font-semibold text-[#166534] mb-4">
+            <h2 className="text-2xl font-semibold text-[#0b5394] mb-4">
               Partnerships and synergy
             </h2>
             <p>

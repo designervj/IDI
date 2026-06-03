@@ -6,6 +6,8 @@ import ImpactStats from "@/components/sections/ImpactStats";
 import WhoWeAre from "@/components/sections/WhoWeAre";
 import ThematicAreas from "@/components/sections/ThematicAreas";
 import Partners from "@/components/sections/Partners";
+import MissionHighlight from "@/components/sections/MissionHighlight";
+import CallToAction from "@/components/sections/CallToAction";
 
 
 export default function HomePage() {
@@ -13,9 +15,11 @@ export default function HomePage() {
     <main>
       <Hero />
       <WhoWeAre />
+      <MissionHighlight />
       <ImpactStats />
       <ThematicAreas />
       <AboutStrip />
+      <CallToAction />
       <Partners />
     </main>
   );

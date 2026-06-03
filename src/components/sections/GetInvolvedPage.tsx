@@ -14,7 +14,7 @@ const GetInvolvedPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-center text-white px-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-lg tracking-tight">
               Get Involved
             </h1>
 
@@ -33,64 +33,64 @@ const GetInvolvedPage = () => {
         }}>
         {/* Overlay */}
         <div className="w-full min-h-screen bg-black/40 flex items-center py-16 px-4">
-          <div className="max-w-5xl w-full mx-auto bg-white/60 rounded-xl shadow-xl p-8 md:p-10">
+          <div className="max-w-5xl w-full mx-auto bg-white/60 rounded-2xl shadow-xl p-8 md:p-10">
 
-        
-               
 
-                <div className="flex justify-between  flex-wrap gap-10 my-12 md:pe-12">
-                  {/* Email */}
-                  <div className="flex flex-col justify-center text-center w-full sm:w-[30%] gap-2">
-                    <span className="bg-white p-3 mx-auto rounded-full w-fit">
-                      <Mail className="w-5 h-5 text-green-600" />
-                    </span>
-                    <h4 className="text-gray-900 font-semibold text-lg mt-1">
-                      Email
-                    </h4>
-                    <p className="text-gray-700 font-medium text-base hover:text-[#000]">
-                      <a href="mailto:email@gravis.org.in">email@gravis.org.in</a>
-                    </p>
-                  </div>
 
-                  {/* Website */}
-                  <div className="flex flex-col w-full text-center sm:w-[30%] gap-2">
-                    <span className="bg-white p-3 mx-auto rounded-full w-fit">
-                      <TfiWorld className="w-5 h-5 text-green-600" />
-                    </span>
-                    <p className="text-gray-900 font-semibold text-lg mt-1">
-                      Website
-                    </p>
-                    <a
-                      href="https://www.sabl.org.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-700 font-medium text-base hover:text-[#000]">
-                      www.sabl.org.in
-                    </a>
-                  </div>
 
-                  {/* Address */}
-                  <div className="flex flex-col w-full text-center sm:w-[30%] gap-2">
-                    <span className="bg-white p-3 mx-auto rounded-full w-fit">
-                      <TfiWorld className="w-5 h-5 text-green-600" />
-                    </span>
-                    <p className="text-gray-900 font-semibold text-lg mt-1">
-                      Address
-                    </p>
-                    <p className="text-gray-700 font-medium text-sm leading-5">
-                      3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008,
-                      Rajasthan, India
-                    </p>
-                  </div>
-                </div>
-              
+            <div className="flex justify-between  flex-wrap gap-10 my-12 md:pe-12">
+              {/* Email */}
+              <div className="flex flex-col justify-center text-center w-full sm:w-[30%] gap-2">
+                <span className="bg-white p-3 mx-auto rounded-full w-fit">
+                  <Mail className="w-5 h-5 text-green-600" />
+                </span>
+                <h4 className="text-gray-900 font-semibold text-lg mt-1">
+                  Email
+                </h4>
+                <p className="text-gray-700 font-medium text-base hover:text-[#000]">
+                  <a href="mailto:email@gravis.org.in">email@gravis.org.in</a>
+                </p>
+              </div>
+
+              {/* Website */}
+              <div className="flex flex-col w-full text-center sm:w-[30%] gap-2">
+                <span className="bg-white p-3 mx-auto rounded-full w-fit">
+                  <TfiWorld className="w-5 h-5 text-green-600" />
+                </span>
+                <p className="text-gray-900 font-semibold text-lg mt-1">
+                  Website
+                </p>
+                <a
+                  href="https://www.sabl.org.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 font-medium text-base hover:text-[#000]">
+                  www.sabl.org.in
+                </a>
+              </div>
+
+              {/* Address */}
+              <div className="flex flex-col w-full text-center sm:w-[30%] gap-2">
+                <span className="bg-white p-3 mx-auto rounded-full w-fit">
+                  <TfiWorld className="w-5 h-5 text-green-600" />
+                </span>
+                <p className="text-gray-900 font-semibold text-lg mt-1">
+                  Address
+                </p>
+                <p className="text-gray-700 font-medium text-sm leading-5">
+                  3/437, 458, M.M Colony, Pal Road, Jodhpur – 342008,
+                  Rajasthan, India
+                </p>
+              </div>
+            </div>
+
 
             <SablRajasthanMap />
 
             {/* LAYOUT: LEFT INFO + RIGHT FORM */}
             <div className="grid grid-cols-1 md:grid-cols-1 gap-12 mt-10">
               {/* LEFT SIDE (Address removed, only Email + Website allowed) */}
-             
+
 
               {/* RIGHT SIDE — FORM SECTION */}
               {/* <div className="bg-gray-50 p-6 rounded-md ">

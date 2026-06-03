@@ -40,33 +40,33 @@ const GuidingPrinciplesPage = () => {
   return (
     <div className="w-full">
       {/* 🌿 Hero Section */}
-     
+
 
 
       <div className="relative w-full h-[40vh] overflow-hidden flex items-center justify-center">
-                          {/* Gradient + Pattern Background */}
-                          <div className="absolute inset-0 bg-[#123751]">
-                            {/* Decorative Texture */}
-                            <div
-                              className="absolute inset-0 opacity-[0.08]"
-                              style={{
-                                backgroundImage:
-                                  "url('https://www.transparenttextures.com/patterns/cubes.png')",
-                              }}
-                            ></div>
-                  
-                            {/* Floating light effect */}
-                            {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
-                          </div>
-                  
-                          {/* Foreground Content */}
-                       <motion.div
+        {/* Gradient + Pattern Background */}
+        <div className="absolute inset-0 bg-[#123751]">
+          {/* Decorative Texture */}
+          <div
+            className="absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage:
+                "url('https://www.transparenttextures.com/patterns/cubes.png')",
+            }}
+          ></div>
+
+          {/* Floating light effect */}
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_60%_30%,rgba(255,255,255,0.15),transparent_60%)] animate-pulse-slow"></div> */}
+        </div>
+
+        {/* Foreground Content */}
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
           className="relative z-10 text-white px-6 text-center"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-extrabold leading-tight tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl  font-bold leading-tight tracking-tight drop-shadow-lg">
             Guiding Principles
           </h1>
           <motion.p
@@ -78,10 +78,10 @@ const GuidingPrinciplesPage = () => {
             GRAVIS' approach is as crucial as its objectives — grounded in fairness, sustainability, and community empowerment
           </motion.p>
         </motion.div>
-                  
-                          {/* Decorative Bottom Wave */}
-                        
-                        </div>
+
+        {/* Decorative Bottom Wave */}
+
+      </div>
 
       {/* 📜 Principles Section */}
       <section className="bg-[#F7F8F6] py-20 px-6 md:px-20">
@@ -93,8 +93,8 @@ const GuidingPrinciplesPage = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-semibold text-[#008a2c] mb-14"
           >
-           Core principles
-           
+            Core principles
+
           </motion.h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
