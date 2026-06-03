@@ -29,9 +29,9 @@ export default function MissionHighlight() {
 
   return (
     <section className="py-24 bg-gray-50 overflow-hidden">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className=" mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -40,7 +40,7 @@ export default function MissionHighlight() {
           >
             What Drives Us
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: 96 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -61,14 +61,14 @@ export default function MissionHighlight() {
             >
               {/* Image Section with Overlay */}
               <div className="relative h-56 overflow-hidden">
-                <img 
-                  src={card.image} 
-                  alt={card.title} 
+                <img
+                  src={card.image}
+                  alt={card.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Brand color overlay similar to the HEDCON green overlay */}
                 <div className="absolute inset-0 bg-brand-blue/60 mix-blend-multiply group-hover:bg-brand-blue/40 transition-colors duration-500"></div>
-                
+
                 {/* Floating Icon */}
                 <div className="absolute bottom-4 left-6 z-10 drop-shadow-md">
                   {card.icon}
@@ -83,7 +83,7 @@ export default function MissionHighlight() {
                 <p className="text-gray-600 leading-relaxed mb-8 flex-grow">
                   {card.description}
                 </p>
-                
+
                 <span className="text-brand-orange font-bold text-sm uppercase tracking-wider inline-flex items-center gap-2 group-hover:text-brand-blue transition-colors mt-auto">
                   DISCOVER MORE <ArrowRight className="w-4 h-4" />
                 </span>

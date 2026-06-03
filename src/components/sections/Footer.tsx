@@ -81,7 +81,7 @@ export default function Footer() {
                 </div>
                 <p className="leading-relaxed mt-1">
                   Inclusive Development Initiatives,<br/>
-                  67/145, Sector 6, Pratap Nagar Housing Board,<br/>
+                  67/145, Sector 6, Pratap Nagar Housing Board,
                   Jagriti Marg, Jaipur - 302033, Rajasthan, India
                 </p>
               </div>

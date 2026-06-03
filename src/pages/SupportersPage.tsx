@@ -47,7 +47,7 @@ export default function SupportersPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight"
+            className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight font-bold"
           >
             Key <span className="text-brand-orange">Supporters</span>
           </motion.h1>
