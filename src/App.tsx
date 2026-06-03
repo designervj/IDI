@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HomePage from "@/pages/HomePage";
 // import ProductPage from '@/pages/ProductPage'
 import Header from "@/components/sections/Header";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/sections/Footer";
 import VisionPage from "@/pages/VisionPage";
 import ServicesPage from "@/pages/ServicesPage";
@@ -11,6 +11,16 @@ import MediaPage from "@/pages/MediaPage";
 import SupportersPage from "@/pages/SupportersPage";
 import OpportunitiesPage from "@/pages/OpportunitiesPage";
 import ContactUs from "./components/sections/ContactUs";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 export default function App() {
   // const isBeforeLaunch = new Date() < LAUNCH_DATE;
@@ -36,6 +46,7 @@ export default function App() {
   ];
   return (
     <div className="text-brand-text">
+      <ScrollToTop />
       <Header
       // leftNav={leftNav}
       // phoneText="Kontaktirajte nas"
